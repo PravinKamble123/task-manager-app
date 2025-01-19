@@ -11,17 +11,16 @@ __pycache__/
 *.venv
 .env.*
 venv/
-pip-log.txt
-pip-delete-this-directory.txt
+.venv
 
-#backend
-backend/instance/
+# backend
+instance/
 *.sqlite3
-*.log
 *.db
+backend/__pycache__/
+backend/instance/
 backend/*.sqlite3
 backend/*.db
-backend/*.log
 
 # Frontend
 node_modules/
@@ -30,16 +29,15 @@ dist/
 build/
 frontend/dist/
 frontend/build/
-*.lock
-*.cache
-frontend/*.lock
-frontend/*.cache
 
-# General
-*.swp
+# Git
+.git/
+.gitignore
+
+
 .DS_Store
 .idea/
 .vscode/
-*.iml
+*.swp
 *.tmp
 Thumbs.db
