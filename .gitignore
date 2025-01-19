@@ -1,0 +1,49 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+*.env
+*.venv
+.env.*
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+#backend
+backend/instance/
+*.sqlite3
+*.log
+*.db
+backend/*.sqlite3
+backend/*.db
+backend/*.log
+
+# Frontend
+node_modules/
+frontend/node_modules/
+dist/
+build/
+frontend/dist/
+frontend/build/
+*.lock
+*.cache
+frontend/*.lock
+frontend/*.cache
+
+# Docker
+*.dockerfile
+.dockerignore
+
+# General
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.iml
+*.tmp
+Thumbs.db
