@@ -10,10 +10,10 @@ COPY ./backend /app/
 
 RUN rm -rf /app/.venv /app/backend/__pycache__ /app/backend/instance
 
-EXPOSE 5000
+ENV FLASK_RUN_PORT=5003
 
 ENV FLASK_APP=app
 ENV FLASK_ENV=development
 
 # Start the Flask app
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5003"]
